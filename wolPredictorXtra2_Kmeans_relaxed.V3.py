@@ -8,14 +8,14 @@ from sklearn.cluster import KMeans
 import re
 import random
 
-#load some data!!
+#load some data!!!
 dat = pd.read_csv("geigerDevt.csv", header=0) # working CSV = datMLformatted_geiger2.csv
 taxa = sorted(list(set(dat['NameOnPhylo'])))
 wols = list(set(dat['wspClade']))
 wols.remove('noWol')
 comms = sorted(list(set(dat['fig.species'])))
 X = np.array(dat[taxa])
-    
+
 ###### SET SOME PARAMETERS!!!!! ######
 increment = 100 #how many divisions btwn upper & lower to split "species"
 upper = 4 #upper val - if upper == increment then spp delim range will cover upto 100% pw dists
