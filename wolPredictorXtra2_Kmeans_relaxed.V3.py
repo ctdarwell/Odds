@@ -8,7 +8,7 @@ from sklearn.cluster import KMeans
 import re
 import random
 
-#pointless comment fao GitHub test #8
+#pointless comment fao GitHub test #9
 
 dat = pd.read_csv("geigerDevt.csv", header=0) # working CSV = datMLformatted_geiger2.csv
 taxa = sorted(list(set(dat['NameOnPhylo'])))
